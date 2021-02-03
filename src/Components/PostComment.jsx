@@ -19,7 +19,7 @@ function PostComment(){
     postcomments.map((postcomment) => {
       return (
         <div className="comment">
-        <div className="card p-3">
+        <div className="comments p-3">
           <p>{postcomment.title}</p>
           <p>{postcomment.body}</p>
         </div>
