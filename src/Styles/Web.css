@@ -1,195 +1,32 @@
-.logo {
-    height: 100px;
-    width: 100px;
-}
-.fa-facebook {
-    margin-left: 100px;
+.fa{
     color: black;
 }
-
-.fa-youtube {
-    margin-left: 100px;
-    color: black;
+.icon-pic{
+    font-size: 30px;
+    color: white;
 }
-
-.fa-linkedin {
-    margin-left: 100px;
-    color: black;
+.icon-label{
+    color: white;
 }
-@media only screen and (max-width:576px)
-{
-.logo {
-    height: 30px;
-    width: 30px;
+.picture {
+    height: 500px;
+    width: 320px;
 }
-.fa-facebook {
-    margin-left: 10px;
-    color: black;
+@media (max-width:767px){
+    .picture{
+        width: 395px;
+    }
 }
-
-.fa-youtube {
-    margin-left: 10px;
-    color: black;
-}
-
-.fa-linkedin {
-    margin-left: 10px;
-    color: black;
-}
-}
-
-.foottop{
-    background-color: black;
-}
-.comment{
-    color:coral;
-    border:3px solid blueviolet;
-}
-
-.view{
-    color:coral;
-    background-color: cyan;
-}
-
-.icon{
-    height:50px;
-}
-.pass1{
+.card-body{
     text-align: justify;
-    color: white;
 }
-.pass2{
-    color: #59a310;
-    font-weight: 500;
-    font-size: 30px;
-}
-.bot{
-    background-color: rgb(175, 9, 9);
-}
-.com{
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: white;
-}
-.image2 {
-    opacity: 0.5;
-    left: 50%;
-    top: 30%;
-    height: 200px;
-    width: 455px;
-    position: absolute;
-    margin-top: -10px;
-    margin-left: -25px;
-}
-
-.top-left {
-    font-style: italic;
-    position: absolute;
-    top: 250px;
-    left: 175px;
-    text-align: center;
-}
-.item{
-    text-align: left;
-}
-.pas{
-    font-size: 30px;
-    color:#59a310;
-}
-.pa{
-    color:white;
-}
-.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    opacity: 0.6;
-}
-
-.image3 {
-    height: 250px;
-    width: 250px;
-}
-
-.topic {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.center {
-    border-radius: 20%;
-    align-items: center;
-}
-
-.pic1 {
-    height: 200px;
-    width: 200px;
-}
-
-.pic2 {
-    height: 200px;
-    width: 200px;
-}
-
-.pic3 {
-    height: 200px;
-    width: 100px;
-}
-
-.pic4 {
-    height: 195px;
-    width: 150px;
-}
-
-.product {
-    text-align: center;
-}
-
-.buy {
-    align-content: center;
-    margin: auto;
-    display: flex;
-    background-color: #59a310;
-    border-color: #59a310;
-    color: white;
-}
-
-.bu {
-    align-content: center;
-    margin: auto;
-    display: flex;
-    background-color: rgb(197, 8, 8);
-    border-color: rgb(197, 8, 8);
-    color: white;
-}
-
-.bgimage1 {
-    padding-top: 20px;
-    height: 75%;
-    width: 100%;
-}
-
-.top-pos {
-    position: absolute;
-    top: -350px;
-    color: white;
-    font-size: 20px;
-}
-
-.youtube {
-    top: -350px;
-    height: 300px;
-    width: 500px;
-    position: absolute;
-}
-.bgimage{
-    height:300px;
-    width:100%;
-}
-
 .card{
-    width:300px;
-    height:350px;
+    width:380px;
+    height:400px;
+
+}
+.youtube-bg{
+    max-height: 450px;
 }
 .card-header{
     color:#59a310;
@@ -197,31 +34,218 @@
 .card-body{
     text-align: justify;
 }
-.bgimage2 {
-    height: 500px;
-    width: 310px;
+.view{
+    color:coral;
+    background-color: cyan;
 }
-
-.bgimage3 {
-    height: 500px;
-    width: 325px;
+.comment{
+    color:coral;
 }
-
-.p1 {
+.buy-button {
+    align-content: center;
+    margin: auto;
+    display: flex;
+    background-color: rgb(235, 31, 31);
+    border-color: rgb(235, 31, 31);
+    color: white;
+}
+.recent-topic {
     padding-top: 20px;
     font-size: 4mm;
     color: #59a310;
 }
-
-.p2 {
+.recent-title {
     font-style: italic;
     font-size: 6mm;
     font-weight: 500;
 }
-
-.top-end {
+.button-view {
     margin-left: 300px;
     color: #59a310;
     border-color: #59a310;
     background-color: white;
+}
+.story-topic {
+    position: absolute;
+    top: -350px;
+    color: white;
+    font-size: 20px;
+}
+.youtube {
+    top: -350px;
+    height: 500%;
+    width: 100%;
+    max-width:360px;
+    position: absolute;
+}
+@media (max-width:767px){
+    .youtube {
+        top: -50px;
+    }
+    .youtube-bg{
+        max-width: 360px;
+    }
+}
+.home-image{
+    max-height: 250px;
+    width: 100%;
+    height:auto;
+    filter:blur(4px);
+}
+.welcome-content{
+    margin-left: 20%;
+    margin-top: -15%;
+}
+.medicine{
+    margin-top: -15%;
+    margin-left: 50%;
+    opacity: 0.6;
+}
+@media (max-width:767px){
+    .welcome-content{
+        margin-left: 20%;
+        margin-top: -50%;
+    }
+    .medicine{
+        margin-top: -40%;
+        margin-left: 50%;
+        opacity: 0.6;
+    }
+}
+.contact-us {
+    background-color: rgba(255,255,255,0);   
+    color:#59a310;
+    border-color: #59a310;
+}
+.card-text{
+    color:#59a310;
+    text-align: center;
+}
+.view-more{
+    color:#59a310;
+    border-color:#59a310;
+    background-color: white;
+}
+.view-more-about{
+    color:#59a310;
+    border-color:#59a310;
+    background-color: rgba(255,255,255,0); 
+}
+.topic {
+    text-align: center;
+    padding-top: 10px;
+}
+.herbalife-bg {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    max-height: 300Px;
+}
+.bg-content {
+    font-style: italic;
+    position: absolute;
+    top: 250px;
+    left: 175px;
+    text-align: center;
+}
+.contact-topic{
+    color: white;
+    margin-top:-130px;
+    margin-left:-350px;
+}
+@media (max-width:767px){
+    .contact-topic{
+        margin-top:-150px;
+        margin-left:-350px;
+    }
+}
+.contact-button{
+    margin-top: 10px;
+    margin-left: -350px;
+    background-color: rgba(255,255,255,0);   
+    color:white;
+    border-color: white;
+}
+.contact-top{
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 8mm;
+}
+.contact-text{
+    text-align: justify;
+}
+
+.transbox1 {
+    background-color: red;
+    opacity: 0.6;
+    width: 25%;
+    margin-top: -280px;
+    margin-left:20px;
+}
+@media (max-width:767px){
+    .transbox1{
+        width: 90%;
+        height:50%;
+        margin-top: -450px;
+        margin-left:20px; 
+    }
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:25%;
+    position:relative;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contact-top{
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 8mm;
+}
+.highlight{
+    border-color: red;
+}
+.submitbutton{
+    background-color: rgb(235, 31, 31);
+    color:white;
+    margin-left: 475px;
+    border-radius: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color:rgb(235, 31, 31);
+}
+.footer-color{
+    background-color: black;
+}
+.icon{
+    height:50px;
+}
+.footer-info{
+    text-align: justify;
+    color: white;
+}
+.footer-contact{
+    color: #59a310;
+}
+.contact-detail{
+    text-align: left;
+}
+.email{
+    color: #59a310;
+}
+.footer-bottom{
+    background-color: rgb(175, 9, 9);
+}
+.footer-label{
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
 }

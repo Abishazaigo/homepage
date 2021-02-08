@@ -1,6 +1,6 @@
-function ColumnWidth2(props){
+function ColSm2(props){
     return(
         <div className={"col-sm-2 "+props.className}>{props.children}</div>
     )
 }
-export default ColumnWidth2;
+export default ColSm2;

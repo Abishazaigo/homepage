@@ -1,6 +1,5 @@
 import {useForm} from "react-hook-form";
-import Input from './Input';
-import '../Styles/Web.css';
+import Button from '../home/Button';
 function Form(){
     const {register, watch, handleSubmit, errors} = useForm();
     const onSubmit = (data) => console.log(data);
@@ -116,7 +115,7 @@ function Form(){
                     <input type="text" ref={register({ required: true})} className="form-control" name="education"  placeholder="Enter qualification details" />
                 </div>
                 )}
-                <button type="submit" className="submitbutton">SUBMIT</button>
+                <Button className="submitbutton" label="SUBMIT" />
             </form>
         </div>
       );

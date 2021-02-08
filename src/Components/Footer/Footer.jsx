@@ -1,51 +1,45 @@
-import '../Styles/Web.css';
 import Icon from '../../Images/icon.png';
 import Address from './Address';
-import ColumnWidth1 from '../ColumnWidth1';
-import ColumnWidth2 from '../ColumnWidth2';
-import ColumnWidth3 from '../ColumnWidth3';
+import Row from '../home/Row';
+import Picture from '../contact/Picture';
 function Footer() {
+    let date=new Date();
+    let year=date.getFullYear();
     return (
-        <div>
-        <div className="footer-color">
-            <div className="row">
-                <ColumnWidth2 />
-                <ColumnWidth3 className="p4">
-                    <img className="icon" src={Icon}/>
+        <footer className="footer-color text-white text-center text-lg-start">
+            <div className="container p-4">
+                <Row>
+                    <div className="col-lg-1"></div>
+                    <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <Picture className="icon" src={Icon} />
                         <p className="footer-info">Internet Marketing Ninjas has mastered the art of creating
                         expert contentthat goes viral, earns trusted links</p>
-                        <p></p>
+                        <hr />
                         <p className="footer-info">Internet Marketing Ninjas has mastered the art of creating
-                        expert content
-                    that goes viral, earns trusted links</p>
-                </ColumnWidth3>
-                <ColumnWidth3 className="p4">
-                <p className="footer-contact">Contact Us</p>
-                <div className="contact-detail">
-                        <Address icon="add_location" />
-                        <Address value="No:350, Marketing Ninjas has" />
-                        <Address icon="local_phone" />
-                        <Address value="9845972640" />
-                        <Address icon="local_post_office" />
-                        <Address value="herbal@gmaiil.com" />
+                        expert content that goes viral, earns trusted links</p>
+                    </div>
+                    <div className="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h2 className="footer-contact">Contact Us</h2>
+                        <div className="contact-detail">
+                            <Address icon="add_location" value="No:350, Marketing Ninjas has"  />
+                            <Address icon="local_phone" value="9845972640"/>
+                            <Address icon="local_post_office" value="herbal@gmaiil.com" />
                         </div>
-                </ColumnWidth3>
-                <ColumnWidth3 className="p4">
-                        <p className="footer-contact">Subscribe Us</p>
+                    </div>
+                    <div className="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h2 className="footer-contact">Subscribe Us</h2>
                         <p className="footer-info">Marketing Ninjas has mastered the art of creating expert
                         content that goes viral</p>
                         <input type="text" className="email" placeholder="Your Email address" />
-                        <button>✉</button>
-                </ColumnWidth3>
-                <ColumnWidth1 />
+                        <button>✉</button> 
+                    </div>
+                    <div className="col-lg-1"></div>
+                </Row>
             </div>
-        </div>
-        <div className="footer-bottom">
-            <p className="footer-label">copyright@ 2020 Herbalife
-            </p>
-        </div>
-        </div>
+            <div className="text-center bg-danger p-1">
+                <h6>copyright@ {year} Herbalife</h6>
+            </div> 
+        </footer>
     )
 }
-
 export default Footer;

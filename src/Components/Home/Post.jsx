@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import axios from 'axios';
-import '../Styles/Web.css';
 function Post(){
     const [post, setPost] = useState({});
     useEffect(() => {

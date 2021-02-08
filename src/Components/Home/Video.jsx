@@ -1,28 +1,29 @@
 import Youtube from '../../Images/youtube-bg.jpg';
-import ColumnWidth2 from '../ColumnWidth2';
-import ColumnWidth4 from '../ColumnWidth4';
+import ColSm2 from './ColSm2';
+import ColSm4 from './ColSm4';
+import Picture from '../contact/Picture';
+import Row from '../home/Row';
+import Button from '../home/Button';
 function Video(){
     return(
         <div>
-        <img src={Youtube} height="450px" width="100%"/>
-    <div class="row">
-        <ColumnWidth2 />
-        <ColumnWidth4 className="p-4">
-            <div class="story-topic">
+        <Picture className="youtube-bg" src={Youtube} height="30%" width="100%"/>
+    <Row>
+        <ColSm2 />
+        <ColSm4 className="md-6 lg-12 p-4 ">
+            <div class="story-topic col-md-6 lg-12">
                 <h3>Our Story</h3>
                 <p align="justify">Since 1999, Internet Marketing Ninjas has mastered the art of creating expert content
-                    that goes viral, earns trusted links, and ranks at the top of Google. Looking to transform
-                    your content marketing strategy? Learn how our Ninja team can help by scheduling a FREE
-                    consultation today.</p>
-                <button type="button" className="view-more-about">View more</button>
+                    that goes viral, earns trusted links, and ranks at the top of Google. </p>
+                <Button className="view-more-about" label="View more" />
             </div>
-        </ColumnWidth4>
-        <ColumnWidth4 className="p-4">
+        </ColSm4>
+        <ColSm4 className="md-6 lg-12 p-4 ">
             <iframe class="youtube" src="https:www.youtube.com/embed/SnuYD9_nrD4">
             </iframe>
-        </ColumnWidth4>
-        <ColumnWidth2 />
-    </div>
+        </ColSm4>
+        <ColSm2 />
+    </Row>
     </div>
     )
 }

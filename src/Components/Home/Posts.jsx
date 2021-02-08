@@ -1,33 +1,35 @@
 import {Link} from "react-router-dom";
-import ColumnWidth1 from '../ColumnWidth1';
-import ColumnWidth5 from '../ColumnWidth5';
-import ColumnWidth6 from '../ColumnWidth6';
-import '../Styles/Web.css';
+import ColSm1 from './ColSm1';
+import ColSm5 from './ColSm5';
+import ColSm6 from './ColSm6';
+import Row from '../home/Row';
 const Posts = (props) => {
   return (
-    <div className="row">
+    <div>
+      <Row>
       {props.posts.map((post) => {
         return (
-            <div className="row">
-              <ColumnWidth5 />
-              <ColumnWidth6>
+            <Row>
+              <ColSm5 />
+              <ColSm6>
                 <div className="card mb-5">
                   <h6 className="card-header h-25" >{post.title}</h6>
                   <p className="card-body">{post.body}</p>
-                    <div className="row">
+                    <Row>
                       <div className="text-left p-4">
-                        <Link to="/Post">View More</Link>
+                        <Link to="/post">View More</Link>
                       </div>
                       <div className="text-right p-4">
-                        <Link to="/PostComment">Comment</Link>
+                        <Link to="/postcomment">Comment</Link>
                       </div>
-                    </div>
+                    </Row>
                 </div>
-              </ColumnWidth6>
-              <ColumnWidth1 />
-            </div>
+              </ColSm6>
+              <ColSm1 />
+            </Row>
         );
       })}
+      </Row>
     </div>
   );
 };

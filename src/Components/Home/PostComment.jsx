@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import axios from 'axios';
-import '../Styles/Web.css';
 function PostComment(){
     const [postcomments, setPostComments] = useState([]);
     useEffect(() => {

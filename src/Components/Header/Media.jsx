@@ -1,7 +1,7 @@
 function Media(props){
     return(
         <>
-        <a href="#" className={props.icon}></a>
+        <a href="#" className="nav-item nav-link"> <i className={props.icon}></i></a>
         </>
     )
 }
